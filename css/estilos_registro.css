@@ -1,0 +1,181 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background-color: #cdcd99;*/
+    background-color: #c7f8f9;
+}
+
+.co-container {
+    min-height: 100%;
+    height: 100%; /*Solo para IE6*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 500px;
+    width: 650px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000;
+}
+
+.formulario{
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .logo{
+    width: 130px;
+    height: 110px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 45%;
+    border: 3px solid #000;
+}
+
+.container h1{
+    padding: 0;
+    text-align: center;
+    color: #000;
+    margin-top: 60px;
+}
+
+.container label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.container input{
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 18px;
+    color: #000;
+}
+
+.container input[type="text"]::placeholder{
+    color: #000;
+}
+
+.container input[type="submit"]{
+    border: none;
+    outline: none;
+    background-color: #000;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 40%;
+    color: #fff;
+}
+
+.formulario .box:nth-child(9){
+    grid-column: 1 / span 2;
+}
+
+.container .enlaces{
+    text-align: center;
+}
+
+.container input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+
+.container .enlaces label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.container a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container a:hover{
+    color: #a3a3a3;
+}
+
+.container .enlaces span{
+    color: blue;
+    cursor: pointer;
+}
+
+.ventana-emergente{
+    position: absolute;
+    background-color: #6ab1c9;
+    padding: 5px 30px 20px 30px;
+    width: 250px;
+    height: 400px;
+    border-radius: 10px;
+    border: 4px solid #000;
+    color: #fff;
+    overflow-y: scroll;
+}
+
+.ventana-emergente::-webkit-scrollbar {
+    width: 12px;
+  }
+
+.ventana-emergente::-webkit-scrollbar-thumb{
+    background: #6ab1c9;
+    border-radius: 20px;
+    border: 3px solid #fff;/*
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);*/
+}
+
+.ventana-emergente .boton-cerrar{   
+    cursor: pointer;
+    background-color: #6ab1c9;
+    border: 2px solid #fff;
+    padding: 10px;
+    width: 60px;
+    height: 15px;
+    border-radius: 10px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.ventana-emergente .boton-cerrar:hover{   
+    background-color: #c7f8f9;
+    color: #2a8eeb;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.ventana-emergente .boton-cerrar h5{   
+    margin: 0;
+}
+
+.box-cerrar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*#6ab1c9 OCEAN*/

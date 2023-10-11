@@ -15,7 +15,7 @@ html, body {
 }
 
 .container{
-    height: 500px;
+    height: 580px;
     width: 650px;
     border: 3px solid #000;
     border-radius: 15px;
@@ -43,7 +43,7 @@ html, body {
     padding: 0;
     text-align: center;
     color: #000;
-    margin-top: 60px;
+    margin-top: 95px;
 }
 
 .container label{
@@ -51,6 +51,7 @@ html, body {
     padding: 0;
     font-weight: bold;
     display: block;
+    height: 20px;
 }
 
 .container input{
@@ -63,7 +64,7 @@ html, body {
     border-bottom: 1px solid #000;
     background: transparent;
     outline: none;
-    height: 30px;
+    height: 37px;
     font-size: 18px;
     color: #000;
 }
